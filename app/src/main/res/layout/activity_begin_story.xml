@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.android.bhuwan.interactivestory.View.BeginStoryActivity"
+                android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:src="@mipmap/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You deftly land your ship near where the distress signal originated. You didn&apos;t notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century."
+        android:id="@+id/StoryTextView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Adventure"
+        android:id="@+id/choice1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4c7cff"
+        android:background="@android:color/white"
+        android:layout_above="@+id/choice2"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move On"
+        android:id="@+id/choice2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#4c7cff"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
